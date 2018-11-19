@@ -1,0 +1,24 @@
+{
+  "name": "arys-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arysbot/shard.git"
+  },
+  "author": "torsina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arysbot/shard/issues"
+  },
+  "homepage": "https://github.com/arysbot/shard#readme",
+  "dependencies": {
+    "grpc": "^1.16.1",
+    "protofiles": "github:arysbot/protofiles",
+    "winston-transport": "^4.2.0"
+  }
+}
