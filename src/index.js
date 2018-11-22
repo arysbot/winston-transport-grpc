@@ -13,7 +13,7 @@ module.exports = class Grpc extends Transport {
         this.config = opts.config || {};
         this.level = opts.level;
         this._grpc = {};
-        this._grpc.path = path.join(__dirname, "../node_modules/protofiles/src/Logger.proto");
+        this._grpc.path = path.join(__dirname, "../node_modules/@arys/protofiles/src/Logger.proto");
         this._grpc.definition = protoLoader.loadSync(this._grpc.path);
         this._grpc.object = grpc.loadPackageDefinition(this._grpc.definition);
         this.Logger = new this._grpc.object.Logger(this.serverURL, grpc.credentials.createInsecure(), this.config);
@@ -38,10 +38,9 @@ module.exports = class Grpc extends Transport {
             if (request.metadata && typeof request.metadata !== "string") throw new Error("Request metadata must be a JSON string.\n" + request);
             this.Logger.Log(request, (error, res) => {
                 if (error) {
-                    return console.log('An error occurred:', error);
+                    throw error;
                 }
-
-                console.log('Response:', res);
+                return res;
             })
         }
 

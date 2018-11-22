@@ -1,26 +1,30 @@
 {
-  "name": "winston-transport-grpc",
+  "name": "@arys/winston-transport-grpc",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arysbot/shard.git"
+    "url": "git+https://github.com/arysbot/winston-transport-grpc.git"
   },
   "author": "torsina",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arysbot/shard/issues"
+    "url": "https://github.com/arysbot/winston-transport-grpc/issues"
   },
-  "homepage": "https://github.com/arysbot/shard#readme",
+  "homepage": "https://github.com/arysbot/winston-transport-grpc#readme",
   "dependencies": {
+    "@arys/protofiles": "^1.0.0",
     "@grpc/proto-loader": "^0.3.0",
     "grpc": "^1.16.1",
-    "protofiles": "github:arysbot/protofiles",
     "winston": "^3.1.0",
     "winston-transport": "^4.2.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {},
+  "description": ""
 }
