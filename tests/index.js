@@ -1,5 +1,5 @@
 const winston = require("winston");
-const Grpc = require("../src/index");
+const Grpc = require("../index");
 
 const logger = winston.createLogger({
     level: 'info',
