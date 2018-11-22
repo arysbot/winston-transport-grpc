@@ -1,5 +1,5 @@
 {
-  "name": "arys-winston-transport-grpc",
+  "name": "winston-transport-grpc",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
